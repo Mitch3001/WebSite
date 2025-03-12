@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .genre {
+            margin-bottom: 40px;
+        }
+
+        .genre h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .genre-images {
+            display: flex; /* Используем Flexbox для горизонтального выравнивания */
+            justify-content: center; /* Центрируем изображения по горизонтали */
+            flex-wrap: wrap; /* Позволяем переносить изображения на новую строку при необходимости */
+        }
+
+        .genre-images img {
+            max-width: 200px; /* Ограничиваем максимальную ширину изображений */
+            margin: 10px; /* Отступы между изображениями */
+            border-radius: 8px; /* Закругленные углы для изображений */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для изображений */
+        }
+
+        /* Новый стиль для портретов */
+        .genre-images img.portrait {
+            width: calc(33.33% - 20px); /* Ширина портретов, чтобы уместились 3 в строке с учетом отступов */
+            height: auto; /* Автоматическая высота, сохраняем пропорции */
+            max-height: 200px; /* Ограничиваем максимальную высоту для портретов */
+            object-fit: cover; /* Обрезаем изображение, сохраняя пропорции */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Art Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Art Works</h2>
+            <div class="genre">
+                <h3>Landscapes</h3>
+                <div class="genre-images">
+                    <img src="landscape1.jpg" alt="Landscape 1" />
+                    <img src="landscape2.jpg" alt="Landscape 2" />
+                </div>
+            </div>
+            <div class="genre">
+                <h3>Portraits</h3>
+                <div class="genre-images">
+                    <img class="portrait" src="portrait1.jpg" alt="Portrait 1" />
+                    <img class="portrait" src="portrait2.jpg" alt="Portrait 2" />
+                    <img class="portrait" src="portrait3.jpg" alt="Portrait 3" />
+                    <img class="portrait" src="portrait4.jpg" alt="Portrait 4" />
+                    <img class="portrait" src="portrait5.jpg" alt="Portrait 5" />
+                    <img class="portrait" src="portrait6.jpg" alt="Portrait 6" />
+                </div>
+            </div>
+            <div class="genre">
+                <h3>Abstract</h3>
+                <div class="genre-images">
+                    <img src="abstract1.jpg" alt="Abstract 1" />
+                    <img src="abstract2.jpg" alt="Abstract 2" />
+                </div>
+            </div>

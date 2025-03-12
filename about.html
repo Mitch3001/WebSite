@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: left; /* Центрирует текст */
+        }
+
+        .about img {
+            max-width: 40%; /* Ограничивает ширину изображения */
+            height: auto; /* Сохраняет пропорции */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Art Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About the Artist</h2>
+            <img src="artist.jpg" alt="Artist Name" /> <!-- Замените artist.jpg на путь к изображению автора -->
+            <p>Biography and history of the artist...</p>
+            <p>Original inscription: "Each of my works is a story told through color and form. I believe that art should inspire and evoke emotions. In my paintings, I combine traditional techniques with modern ideas to create unique pieces that will delight the eye and soul."</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mikle Korkhy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
